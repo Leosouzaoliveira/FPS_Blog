@@ -1,0 +1,18 @@
+base: &base
+  adapter: postgresql
+  username: postgres
+  password: n0nen0ne
+  host: 127.0.0.1
+  encoding: utf8
+
+development:
+  database: fps_blog_development
+  <<: *base
+
+test:
+  database: fps_blog_test
+  <<: *base
+
+production:
+  database: fps_blog_production
+  <<: *base

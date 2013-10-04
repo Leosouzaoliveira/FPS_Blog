@@ -1,0 +1,15 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  name: MyString
+  release_date: 2013-10-04
+  weapons: MyText
+  characters: MyText
+  history: MyText
+
+two:
+  name: MyString
+  release_date: 2013-10-04
+  weapons: MyText
+  characters: MyText
+  history: MyText
