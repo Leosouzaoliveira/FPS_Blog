@@ -9,10 +9,12 @@ development:
   database: fps_blog_development
   <<: *base
 
-test:
+test: &test
   database: fps_blog_test
   <<: *base
 
 production:
   database: fps_blog_production
   <<: *base
+cucumber:
+  <<: *test

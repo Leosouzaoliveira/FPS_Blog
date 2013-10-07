@@ -1,3 +1,3 @@
 class Game < ActiveRecord::Base
-  attr_accessible :characters, :history, :name, :release_date, :weapons
+  attr_accessible :character, :name, :release_date
 end

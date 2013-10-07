@@ -1,7 +1,7 @@
 class GamesController < ApplicationController
+  # before_filter :authenticate_user!
   # GET /games
   # GET /games.json
-  before_filter :authenticate_user!
   def index
     @games = Game.all
 

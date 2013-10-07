@@ -2,14 +2,10 @@
 
 one:
   name: MyString
-  release_date: 2013-10-04
-  weapons: MyText
-  characters: MyText
-  history: MyText
+  release_date: 2013-10-07
+  character: MyString
 
 two:
   name: MyString
-  release_date: 2013-10-04
-  weapons: MyText
-  characters: MyText
-  history: MyText
+  release_date: 2013-10-07
+  character: MyString

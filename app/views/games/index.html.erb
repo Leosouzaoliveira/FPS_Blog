@@ -4,9 +4,7 @@
   <tr>
     <th>Name</th>
     <th>Release date</th>
-    <th>Weapons</th>
-    <th>Characters</th>
-    <th>History</th>
+    <th>Character</th>
     <th></th>
     <th></th>
     <th></th>
@@ -16,9 +14,7 @@
   <tr>
     <td><%= game.name %></td>
     <td><%= game.release_date %></td>
-    <td><%= game.weapons %></td>
-    <td><%= game.characters %></td>
-    <td><%= game.history %></td>
+    <td><%= game.character %></td>
     <td><%= link_to 'Show', game %></td>
     <td><%= link_to 'Edit', edit_game_path(game) %></td>
     <td><%= link_to 'Destroy', game, method: :delete, data: { confirm: 'Are you sure?' } %></td>
@@ -26,6 +22,6 @@
 <% end %>
 </table>
 
-<br />
+<br />  
 
 <%= link_to 'New Game', new_game_path %>

@@ -3,9 +3,7 @@ class CreateGames < ActiveRecord::Migration
     create_table :games do |t|
       t.string :name
       t.date :release_date
-      t.text :weapons
-      t.text :characters
-      t.text :history
+      t.string :character
 
       t.timestamps
     end
