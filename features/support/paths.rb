@@ -9,6 +9,8 @@ def path_to(page_name)
   	new_user_registration_path
   when /make login/
   	new_user_session_path
+  when /the list of users/
+    users_path
   # Add more page name => path mappings here
   
   else

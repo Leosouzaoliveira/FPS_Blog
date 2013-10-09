@@ -3,7 +3,10 @@ FpsBlog::Application.routes.draw do
 
 
   root to: "games#index"  
-  devise_for :users
+  devise_for :users do
+    get "users", to: "devise/sessions#index", as: "users"
+    get "users/show:id", to: "devise/sessions#show", as: "show_user" 
+  end
 
   # The priority is based upon order of creation:
   # first created -> highest priority.

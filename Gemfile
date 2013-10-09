@@ -6,7 +6,6 @@ gem 'rails', '3.2.12'
 # gem 'rails', :git => 'git://github.com/rails/rails.git'
 
 gem 'pg'
-gem 'rspec'
 
 # Gems used only for assets and not required
 # in production environments by default.
@@ -24,9 +23,13 @@ gem 'jquery-rails'
 gem 'devise'
 
 group :development, :test do
+  gem 'rspec'
   gem "rspec-rails", ">= 2.0.1"
-  gem 'cucumber-rails', :require => false 
+  gem 'cucumber'
+  gem 'cucumber-rails', :require => false
+  gem 'webrat' 
   gem 'database_cleaner'
+  gem 'selenium-webdriver'
 end
 
 # To use ActiveModel has_secure_password

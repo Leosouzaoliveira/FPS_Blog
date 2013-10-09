@@ -12,3 +12,9 @@ Given /^I login as (.+) with (.+)$/ do |email, password|
   fill_in "Password", with: password
   click_button "Sign in"
 end
+
+Given /^I have users email (.+)$/ do |emails|	
+  emails.split(', ').each do |email|
+  	User.create!(email: email, password: "12345678")
+  end
+end
